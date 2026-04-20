@@ -1,0 +1,21 @@
+:root {
+  --color-primary: #4e79a7;
+  --color-secondary: #f28e2b;
+  --color-accent: #e15759;
+  --color-background: #ffffff;
+  --color-text: #2d2d2d;
+  --color-muted: #888888;
+
+  --font-sans: 'Segoe UI', system-ui, sans-serif;
+  --font-mono: 'Consolas', monospace;
+
+  --spacing-xs: 4px;
+  --spacing-sm: 8px;
+  --spacing-md: 16px;
+  --spacing-lg: 32px;
+
+  --chart-margin-top: 20px;
+  --chart-margin-right: 30px;
+  --chart-margin-bottom: 40px;
+  --chart-margin-left: 50px;
+}
