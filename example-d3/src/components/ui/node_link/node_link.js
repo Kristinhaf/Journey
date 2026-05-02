@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { useResizeObserver } from "../../../hooks/useResizeObserver";
 import data from "../../../data/data.json";
 
-function NodeLink() {
+function NodeLink({ onAddToTimeline, onRemoveFromTimeline, timelineItemIds = new Set() }) {
     const nodes = data.options;
     const [links, setLinks] = useState([]);
     const [selectedId, setSelectedId] = useState(null);
@@ -44,20 +44,16 @@ function NodeLink() {
                 if (experience) {
                     if (experience.dateStart > other.dateStart && experience.dateEnd < other.dateEnd) {
                         computed.push({ source: n1.id, target: n2.id });
-                        console.log("Linking", n1.name, n1.dateStart, "to", n1.dateEnd, "with", n2.name, n2.dateStart, "to", n2.dateEnd);
                     }
                 } else {
                     if (n1.dateStart === n2.dateStart && n1.dateEnd === n2.dateEnd) {
                         computed.push({ source: n1.id, target: n2.id });
-                        console.log("Linking", n1.name, n1.dateStart, "to", n1.dateEnd, "with", n2.name, n2.dateStart, "to", n2.dateEnd);
                     }
                 }
             });
         });
         setLinks(computed);
     }, [nodes]);
-
-
 
 
 
@@ -78,8 +74,34 @@ function NodeLink() {
         ? [...nodes.filter(d => d.id !== selectedId), nodes.find(d => d.id === selectedId)]
         : nodes;
 
+    const selectedNode = selectedId ? nodes.find(d => d.id === selectedId) : null;
+    const alreadyAdded = selectedId ? timelineItemIds.has(selectedId) : false;
+
     return (
         <div ref={containerRef} style={{ width: "100%", height: "100%", position: "relative" }}>
+            {selectedNode && (
+                <button
+                    onClick={() => alreadyAdded ? onRemoveFromTimeline(selectedId) : onAddToTimeline(selectedNode)}
+                    style={{
+                        position: "absolute",
+                        top: 12,
+                        right: 12,
+                        zIndex: 10,
+                        padding: "8px 18px",
+                        borderRadius: "20px",
+                        border: alreadyAdded ? "#6c0808": "2px solid #2e7d32",
+                        backgroundColor: alreadyAdded ? "#e34242" : "#2e7d32",
+                        color: "white",
+                        cursor: alreadyAdded ? "default" : "pointer",
+                        fontWeight: 600,
+                        fontSize: "12px",
+                    }}
+                >
+                    {alreadyAdded ? " - Remove from timeline" : `+ Add to timeline`}
+                </button>
+
+
+            )}
             <svg style={{ position: "absolute", top: 0, left: 0, width: "100%", height: "100%" }}>
                 {/* Lines rendered first so they sit behind the circles */}
                 {links.map(l => {

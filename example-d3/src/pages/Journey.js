@@ -15,6 +15,21 @@ function Journey() {
     const [toDate, setToDate] = React.useState(null);
     const [submittedData, setSubmittedData] = React.useState(null);
     const [activeCategories, setActiveCategories] = React.useState(["flight", "stay", "experience"]);
+    const [timelineItems, setTimelineItems] = React.useState([]);
+
+    const addToTimeline = (node) => {
+        setTimelineItems(prev => prev.some(i => i.id === node.id) ? prev : [...prev, { ...node, status: "option" }]);
+    };
+
+    const removeFromTimeline = (nodeId) => {
+        setTimelineItems(prev => prev.filter(i => i.id !== nodeId));
+    };
+
+    const toggleStatus = (nodeId) => {
+        setTimelineItems(prev => prev.map(i =>
+            i.id === nodeId ? { ...i, status: i.status === "option" ? "booked" : "option" } : i
+        ));
+    };
 
     const handleSubmit = () => {
         setSubmittedData({ outbound, destination, capacity, fromDate, toDate });
@@ -58,10 +73,14 @@ function Journey() {
                 <div style={{ backgroundColor: "#ffffff", flex: 1, tabSize: "0", position: "relative" }}>
                     {/* <TagButtons activeCategories={activeCategories} onChange={setActiveCategories} /> */}
                     {/* {submittedData && <NodeLink submittedData={submittedData} activeCategories={activeCategories} />} */}
-                    <NodeLink />
+                    <NodeLink
+                        onAddToTimeline={addToTimeline}
+                        onRemoveFromTimeline={removeFromTimeline}
+                        timelineItemIds={new Set(timelineItems.map(i => i.id))}
+                    />
                 </div>
-                <div style={{ backgroundColor: "#c91daf", height: "40%" }}>
-                    <TimelineGraph />
+                <div style={{ backgroundColor: "#c91daf", height: "auto" }}>
+                    <TimelineGraph timelineItems={timelineItems} fromDate={fromDate} toDate={toDate} onToggleStatus={toggleStatus} />
                 </div>
             </div>
             

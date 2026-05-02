@@ -11,7 +11,7 @@
       "dateStart": "2026-07-01",
       "dateEnd": "2026-07-08"
     },
-        {
+    {
       "id": "f2",
       "category": "flight",
       "name": "Stockholm - Barcelona, Ryanair",
@@ -19,7 +19,7 @@
       "dateStart": "2026-07-02",
       "dateEnd": "2026-07-08"
     },
-        {
+    {
       "id": "f3",
       "category": "flight",
       "name": "Stockholm - Barcelona, SAS",
@@ -27,15 +27,15 @@
       "dateStart": "2026-07-02",
       "dateEnd": "2026-07-07"
     },
-        {
+    {
       "id": "f4",
       "category": "flight",
       "name": "Stockholm - Barcelona, Norwegian",
       "price": 100,
       "dateStart": "2026-07-02",
       "dateEnd": "2026-07-05"
-    },       
-        {
+    },
+    {
       "id": "f5",
       "category": "flight",
       "name": "Stockholm - Barcelona, SAS",
@@ -43,7 +43,7 @@
       "dateStart": "2026-07-01",
       "dateEnd": "2026-07-08"
     },
-        {
+    {
       "id": "f6",
       "category": "flight",
       "name": "Stockholm - Barcelona, Ryanair",
@@ -51,7 +51,7 @@
       "dateStart": "2026-07-06",
       "dateEnd": "2026-07-08"
     },
-        {
+    {
       "id": "a1",
       "category": "accommodation",
       "name": "Hotel Barcelona",
@@ -59,7 +59,7 @@
       "dateStart": "2026-07-01",
       "dateEnd": "2026-07-08"
     },
-        {
+    {
       "id": "a2",
       "category": "accommodation",
       "name": "Grand Hotel Barcelona",
@@ -67,7 +67,7 @@
       "dateStart": "2026-07-01",
       "dateEnd": "2026-07-08"
     },
-            {
+    {
       "id": "a3",
       "category": "accommodation",
       "name": "Jollyjunction Hostel",
@@ -75,7 +75,7 @@
       "dateStart": "2026-07-02",
       "dateEnd": "2026-07-08"
     },
-            {
+    {
       "id": "a4",
       "category": "accommodation",
       "name": "The Wanderer's Rest",
@@ -83,7 +83,7 @@
       "dateStart": "2026-07-01",
       "dateEnd": "2026-07-08"
     },
-        {
+    {
       "id": "a5",
       "category": "accommodation",
       "name": "Mountain View Hideaway",
@@ -91,7 +91,7 @@
       "dateStart": "2026-07-02",
       "dateEnd": "2026-07-05"
     },
-            {
+    {
       "id": "a6",
       "category": "accommodation",
       "name": "Sunset Penthouse",
@@ -105,48 +105,59 @@
       "name": "Real Madrid vs Barcelona football match",
       "price": 250,
       "dateStart": "2026-07-02",
-      "dateEnd": "2026-07-02"
+      "dateEnd": "2026-07-02",
+      "startTime": "20:00",
+      "endTime": "22:00"
     },
-        {
+    {
       "id": "e2",
       "category": "experience",
       "name": "Bad bunny concert",
       "price": 400,
       "dateStart": "2026-07-05",
-      "dateEnd": "2026-07-05"
+      "dateEnd": "2026-07-05",
+      "startTime": "21:00",
+      "endTime": "23:30"
     },
-        {
+    {
       "id": "e3",
       "category": "experience",
       "name": "Shakira concert",
       "price": 50,
       "dateStart": "2026-07-02",
-      "dateEnd": "2026-07-02"
+      "dateEnd": "2026-07-02",
+      "startTime": "19:00",
+      "endTime": "21:30"
     },
-        {
+    {
       "id": "e4",
       "category": "experience",
       "name": "Bruno Mars concert",
       "price": 150,
       "dateStart": "2026-07-07",
-      "dateEnd": "2026-07-07"
+      "dateEnd": "2026-07-07",
+      "startTime": "21:00",
+      "endTime": "23:30"
     },
-        {
+    {
       "id": "e5",
       "category": "experience",
       "name": "Stuttgart VFB vs Barcelona football match",
       "price": 300,
       "dateStart": "2026-07-06",
-      "dateEnd": "2026-07-06"
+      "dateEnd": "2026-07-06",
+      "startTime": "18:00",
+      "endTime": "20:00"
     },
-        {
+    {
       "id": "e6",
       "category": "experience",
       "name": "Primavera Sound music festival",
       "price": 1000,
       "dateStart": "2026-07-05",
-      "dateEnd": "2026-07-07"
+      "dateEnd": "2026-07-07",
+      "startTime": "12:00",
+      "endTime": "23:00"
     }
-    
   ]
 }

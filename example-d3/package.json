@@ -19,6 +19,7 @@
     "react-force-graph-2d": "^1.29.1",
     "react-router-dom": "^7.14.1",
     "react-scripts": "5.0.1",
+    "vis-data": "^8.0.3",
     "vis-timeline": "^8.5.0",
     "web-vitals": "^2.1.4"
   },
