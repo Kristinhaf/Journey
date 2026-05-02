@@ -3,9 +3,9 @@ import { Button, FormControl, InputLabel, Select, MenuItem } from "@mui/material
 import DateRangePicker from "../components/ui/datepicker/datepicker";
 import NumberInputBasic from "../components/ui/number_input/number_input";
 // import Menu from "../components/ui/menu/Menu";
-// import Timeline from "../components/ui/timeline/Timeline";
-import NodeLink from "../components/ui/charts/node_link";
-import TagButtons from "../components/ui/tag_buttons/TagButtons";
+import TimelineGraph from "../components/ui/timeline_graph/timeline_graph";
+import NodeLink from "../components/ui/node_link/node_link";
+// import TagButtons from "../components/ui/tag_buttons/TagButtons";
 
 function Journey() {
     const [destination, setDestination] = React.useState("Barcelona");
@@ -60,8 +60,8 @@ function Journey() {
                     {/* {submittedData && <NodeLink submittedData={submittedData} activeCategories={activeCategories} />} */}
                     <NodeLink />
                 </div>
-                <div style={{ backgroundColor: "#c91daf", height: "10%" }}>
-                    timeline area
+                <div style={{ backgroundColor: "#c91daf", height: "40%" }}>
+                    <TimelineGraph />
                 </div>
             </div>
             
