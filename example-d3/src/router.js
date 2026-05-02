@@ -7,12 +7,16 @@ import Journey from "./pages/Journey";
 function Router() {
     return (
         <BrowserRouter>
-            <Navbar />
-            <Routes>
-                <Route path="/" element={<Home />} />
-                <Route path="/about" element={<About />} />
-                <Route path="/journey" element={<Journey />} />
-            </Routes>
+            <div style={{ display: "flex", flexDirection: "column", height: "100vh" }}>
+                <Navbar />
+                <div style={{ flex: 1, overflow: "hidden" }}>
+                    <Routes>
+                        <Route path="/" element={<Home />} />
+                        <Route path="/about" element={<About />} />
+                        <Route path="/journey" element={<Journey />} />
+                    </Routes>
+                </div>
+            </div>
         </BrowserRouter>
     );
 }

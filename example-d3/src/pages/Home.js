@@ -5,10 +5,9 @@ function Home() {
     return (
         <div>
             <h1>Start a new journey</h1>
-            <Button  variant="contained" color="primary">
-                <NavLink to="/journey" end>Start Journey</NavLink>
+            <Button variant="contained" component={NavLink} to="/journey">
+                Start Journey
             </Button>
-            
         </div>
     );
 }
