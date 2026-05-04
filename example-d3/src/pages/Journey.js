@@ -36,12 +36,12 @@ function Journey() {
     };
 
     return (
-        <div style={{ display: "flex", flexDirection: "row", height: "100%", backgroundColor: "#d62e2e" }} >
-            <div style={{ backgroundColor: "#1b3197", width: "20%", padding: "16px"}}>
+        <div style={{ display: "flex", flexDirection: "row", height: "100%", backgroundColor: "#f8eade" }} >
+            {/* <div style={{ backgroundColor: "#1b3197", width: "20%", padding: "16px"}}>
                 filter
-            </div>
-            <div style={{ backgroundColor: "#37a352", flex: 1, display: "flex", flexDirection: "column" }}>
-                <div style={{ display: "flex", flexDirection: "row",  backgroundColor: "#97611b", height: "10%", padding: "16px", alignItems: "center", gap: "16px" }}>
+            </div> */}
+            <div style={{ backgroundColor: "#f8eade", flex: 1, display: "flex", flexDirection: "column" }}>
+                <div style={{ display: "flex", flexDirection: "row",  backgroundColor: "#dde6ed", height: "10%", padding: "16px", alignItems: "center", gap: "16px" }}>
                     <FormControl style={{ minWidth: 200 }}>
                         <InputLabel id="from-label">Travelling from</InputLabel>
                         <Select
@@ -70,16 +70,16 @@ function Journey() {
                         Submit
                     </Button>
                 </div>
-                <div style={{ backgroundColor: "#ffffff", flex: 1, tabSize: "0", position: "relative" }}>
-                    {/* <TagButtons activeCategories={activeCategories} onChange={setActiveCategories} /> */}
-                    {/* {submittedData && <NodeLink submittedData={submittedData} activeCategories={activeCategories} />} */}
+                <div style={{ backgroundColor: "#dde6ed", flex: 1, tabSize: "0", position: "relative" }}>
                     <NodeLink
                         onAddToTimeline={addToTimeline}
                         onRemoveFromTimeline={removeFromTimeline}
                         timelineItemIds={new Set(timelineItems.map(i => i.id))}
+                        submittedData={submittedData}
                     />
                 </div>
-                <div style={{ backgroundColor: "#c91daf", height: "auto" }}>
+                <div style={{ backgroundColor: "#cfb59e", border: "1px solid #ccc", height: "auto", padding: "16px", display: "flex", flexDirection: "column"}}>
+                    <p style={{ fontFamily: "Palatino, serif", fontWeight: "bold" }}>Timeline</p>
                     <TimelineGraph timelineItems={timelineItems} fromDate={fromDate} toDate={toDate} onToggleStatus={toggleStatus} />
                 </div>
             </div>

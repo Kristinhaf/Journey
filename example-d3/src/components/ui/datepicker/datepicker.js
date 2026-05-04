@@ -7,7 +7,12 @@ import dayjs from "dayjs";
 const julyStart = dayjs("2026-07-01");
 const julyEnd = dayjs("2026-07-31");
 
+
+
 function DateRangePicker({ fromDate, setFromDate, toDate, setToDate }) {
+  
+  const formatDate = (date) => date ? date.format("YYYY-MM-DD") : "null";
+
   return (
     <LocalizationProvider dateAdapter={AdapterDayjs}>
       <DatePicker

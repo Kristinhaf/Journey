@@ -6,6 +6,7 @@
     {
       "id": "f1",
       "category": "flight",
+      "subtype": null,
       "name": "Stockholm - Barcelona, Ryanair",
       "price": 89,
       "dateStart": "2026-07-01",
@@ -14,6 +15,7 @@
     {
       "id": "f2",
       "category": "flight",
+      "subtype": null,
       "name": "Stockholm - Barcelona, Ryanair",
       "price": 119,
       "dateStart": "2026-07-02",
@@ -22,6 +24,7 @@
     {
       "id": "f3",
       "category": "flight",
+      "subtype": null,
       "name": "Stockholm - Barcelona, SAS",
       "price": 200,
       "dateStart": "2026-07-02",
@@ -30,6 +33,7 @@
     {
       "id": "f4",
       "category": "flight",
+      "subtype": null,
       "name": "Stockholm - Barcelona, Norwegian",
       "price": 100,
       "dateStart": "2026-07-02",
@@ -38,6 +42,7 @@
     {
       "id": "f5",
       "category": "flight",
+      "subtype": null,
       "name": "Stockholm - Barcelona, SAS",
       "price": 90,
       "dateStart": "2026-07-01",
@@ -46,6 +51,7 @@
     {
       "id": "f6",
       "category": "flight",
+      "subtype": null,
       "name": "Stockholm - Barcelona, Ryanair",
       "price": 50,
       "dateStart": "2026-07-06",
@@ -54,6 +60,7 @@
     {
       "id": "a1",
       "category": "accommodation",
+      "subtype": "hotel",
       "name": "Hotel Barcelona",
       "price": 1200,
       "dateStart": "2026-07-01",
@@ -62,6 +69,7 @@
     {
       "id": "a2",
       "category": "accommodation",
+      "subtype": "hotel",
       "name": "Grand Hotel Barcelona",
       "price": 1500,
       "dateStart": "2026-07-01",
@@ -70,7 +78,8 @@
     {
       "id": "a3",
       "category": "accommodation",
-      "name": "Jollyjunction Hostel",
+      "subtype": "hostel",
+      "name": "Jollyjunction",
       "price": 300,
       "dateStart": "2026-07-02",
       "dateEnd": "2026-07-08"
@@ -78,6 +87,7 @@
     {
       "id": "a4",
       "category": "accommodation",
+      "subtype": "airbnb",
       "name": "The Wanderer's Rest",
       "price": 200,
       "dateStart": "2026-07-01",
@@ -86,6 +96,7 @@
     {
       "id": "a5",
       "category": "accommodation",
+      "subtype": "airbnb",
       "name": "Mountain View Hideaway",
       "price": 500,
       "dateStart": "2026-07-02",
@@ -94,6 +105,7 @@
     {
       "id": "a6",
       "category": "accommodation",
+      "subtype": "airbnb",
       "name": "Sunset Penthouse",
       "price": 700,
       "dateStart": "2026-07-01",
@@ -102,7 +114,8 @@
     {
       "id": "e1",
       "category": "experience",
-      "name": "Real Madrid vs Barcelona football match",
+      "subtype": "sport match",
+      "name": "Real Madrid vs Barcelona",
       "price": 250,
       "dateStart": "2026-07-02",
       "dateEnd": "2026-07-02",
@@ -112,7 +125,8 @@
     {
       "id": "e2",
       "category": "experience",
-      "name": "Bad bunny concert",
+      "subtype": "concert",
+      "name": "Bad bunny",
       "price": 400,
       "dateStart": "2026-07-05",
       "dateEnd": "2026-07-05",
@@ -122,6 +136,7 @@
     {
       "id": "e3",
       "category": "experience",
+      "subtype": "concert",
       "name": "Shakira concert",
       "price": 50,
       "dateStart": "2026-07-02",
@@ -132,7 +147,8 @@
     {
       "id": "e4",
       "category": "experience",
-      "name": "Bruno Mars concert",
+      "subtype": "concert",
+      "name": "Bruno Mars",
       "price": 150,
       "dateStart": "2026-07-07",
       "dateEnd": "2026-07-07",
@@ -142,7 +158,8 @@
     {
       "id": "e5",
       "category": "experience",
-      "name": "Stuttgart VFB vs Barcelona football match",
+      "subtype": "sport match",
+      "name": "Stuttgart VFB vs Barcelona",
       "price": 300,
       "dateStart": "2026-07-06",
       "dateEnd": "2026-07-06",
@@ -152,7 +169,8 @@
     {
       "id": "e6",
       "category": "experience",
-      "name": "Primavera Sound music festival",
+      "subtype": "festival",
+      "name": "Primavera Sound",
       "price": 1000,
       "dateStart": "2026-07-05",
       "dateEnd": "2026-07-07",

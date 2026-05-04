@@ -3,7 +3,7 @@
     justify-content: space-between;
     align-items: center;
     padding: 1rem;
-    background-color: beige;
+    background-color: #cfb59e;
 }
 
 .navbar-left {
@@ -17,6 +17,7 @@
     font-size: 1.2rem;
     text-decoration: none;
     color: inherit;
+    font-family: Palatino, serif;
 }
 
 .nav-links {
